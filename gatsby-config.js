@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`
+})
+
 module.exports = {
   siteMetadata: {
     title: "omot",
@@ -6,11 +10,11 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "mlX5lQqNw8v3TQtUacxe8iNDlRmAGGob1ARmXOAvX7k",
-        spaceId: "r2nhtgw6tw17",
+        accessToken: process.env.CONTENTFUL_API_KEY,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
       },
     },
-    "gatsby-plugin-postcss",
+    "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
