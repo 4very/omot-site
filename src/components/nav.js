@@ -1,24 +1,34 @@
 
 import * as React from "react"
 
-
 // markup
-const navBar = () => {
+const NavBar = () => {
     return (
-        <div></div>
-    );
+      <div></div>
+        // <Menu mode="horizontal" theme="dark">
+        //   <Menu.Item key="mail">
+        //     Navigation One
+        //   </Menu.Item>
+        //   <Menu.Item key="app" disabled>
+        //     Navigation Two
+        //   </Menu.Item>
+        //   <SubMenu key="SubMenu"  title="Navigation Three - Submenu">
+        //     <Menu.ItemGroup title="Item 1">
+        //       <Menu.Item key="setting:1">Option 1</Menu.Item>
+        //       <Menu.Item key="setting:2">Option 2</Menu.Item>
+        //     </Menu.ItemGroup>
+        //     <Menu.ItemGroup title="Item 2">
+        //       <Menu.Item key="setting:3">Option 3</Menu.Item>
+        //       <Menu.Item key="setting:4">Option 4</Menu.Item>
+        //     </Menu.ItemGroup>
+        //   </SubMenu>
+        //   <Menu.Item key="alipay">
+        //     <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+        //       Navigation Four - Link
+        //     </a>
+        //   </Menu.Item>
+        // </Menu>
+    )
 }
 
-export default navBar
-
-//     <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
-//     <div class="container"><a class="navbar-brand js-scroll-trigger" href="#" style="font-family: 'Open Sans', sans-serif;font-weight: normal;font-style: normal;text-transform: lowercase;">onmyownti.me</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
-//         <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family: 'Open Sans', sans-serif;text-transform: lowercase;">
-//             <ul class="navbar-nav ml-auto">
-//                 <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="#about">About</a></li>
-//                 <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#download">projects</a></li>
-//                 <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#contact">photo</a></li>
-//             </ul>
-//         </div>
-//     </div>
-// </nav>
+export default NavBar
