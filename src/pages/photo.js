@@ -1,34 +1,38 @@
-import * as React from "react"
-import { graphql, useStaticQuery } from 'gatsby'
+import * as React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 
+import Base from "../components/base";
 
 // markup
 const PhotoPage = () => {
-    const data = useStaticQuery(graphql`query {
-        allContentfulPhotopost {
-          edges {
-            node {
-              title
-            }
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulPhotopost {
+        edges {
+          node {
+            title
           }
         }
-      }`)
+      }
+    }
+  `);
 
   return (
-    <div>
-      testing
-      <ol>
+    <Base>
+      <div>
+        testing
+        <ol>
           {data.allContentfulPhotopost.edges.map((edge) => {
-              return (
-                <li>
-                    <h2>{edge.node.title}</h2>
-                </li>
-              )
+            return (
+              <li>
+                <h2>{edge.node.title}</h2>
+              </li>
+            );
           })}
-      </ol>
-    </div>
-    
+        </ol>
+      </div>
+    </Base>
   );
-}
+};
 
-export default PhotoPage
+export default PhotoPage;

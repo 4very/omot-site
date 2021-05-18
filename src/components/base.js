@@ -1,15 +1,17 @@
 import * as React from "react"
 
 import NavBar from "./nav"
+import ParticlesComp from "./particles"
 
 
 // markup
 const Base = (props) => {
     return (
-        <div>
-            <div><NavBar /></div>
+        <>
+            <ParticlesComp />
+            <NavBar />
             {props.children}
-        </div>
+        </>
     );
 }
 
