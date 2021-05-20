@@ -9,7 +9,7 @@ module.exports = {
         mono: ["Source Code Pro", "mono"],
       },
       colors: {
-        background: "#161212",
+        background: "#121212",
         accent1: "#9074BE",
         accent2: "#7EC8AC",
         accent3: "#FC9F5B",

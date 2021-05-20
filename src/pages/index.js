@@ -12,7 +12,7 @@ const IndexPage = () => {
       <Base>
         <ParticlesComp />
         <Hero />
-        <div className="left-0 top-full absolute">
+        <div className="left-0 top-full absolute bg-background">
           <Blogpreview />
         </div>
       </Base>
