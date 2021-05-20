@@ -1,16 +1,37 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Blogpreview = () => {
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+const handleDragStart = (e) => e.preventDefault();
+
+const items = [
+  <img
+    src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg"
+    onDragStart={handleDragStart}
+  />,
+  <img
+    src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg"
+    onDragStart={handleDragStart}
+  />,
+  <img
+    src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg"
+    onDragStart={handleDragStart}
+  />,
+];
+
+const Photopreivew = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogpost(
+      allContentfulPhotopost(
         limit: 3
         sort: { fields: publishDate, order: [ASC] }
       ) {
         edges {
           node {
             title
+            publishDate
             slug
             hashtags
           }
@@ -22,13 +43,13 @@ const Blogpreview = () => {
   return (
     <div className="container flex justify-center w-full  max-w-none">
       <div className="p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 w-5/6 justify-center">
-        {data.allContentfulBlogpost.edges.map((edge) => {
+        {data.allContentfulPhotopost.edges.map((edge) => {
           return (
             <div className="rounded-lg overflow-hidden shadow-lg bg-gray-200">
-              <img
-                className="w-full"
-                src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg"
-                alt="Mountain"
+              <AliceCarousel
+                mouseTracking
+                items={items}
+                disableDotsControls={true}
               />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{edge.node.title}</div>
@@ -56,4 +77,4 @@ const Blogpreview = () => {
   );
 };
 
-export default Blogpreview;
+export default Photopreivew;
