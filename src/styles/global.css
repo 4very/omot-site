@@ -8,3 +8,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+    position: absolute !important;
+    top: 50% !important;
+    width: auto !important;
+    font-size: 30px !important;
+    transform: translate(0, -50%)
+}
+
+.alice-carousel__next-btn {
+   right: 0 !important
+}

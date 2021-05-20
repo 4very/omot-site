@@ -5,7 +5,6 @@ import Blogpreview from "../components/blogpreview";
 import Hero from "../components/hero";
 import ParticlesComp from "../components/particles";
 
-// markup
 const IndexPage = () => {
   return (
     <>
