@@ -7,7 +7,7 @@ const Hero = () => {
         onmyowntime
       </h1>
       <h2 className="lg:text-3xl md:text-2xl sm:text-l text-m text-white  font-sans font-thin text-center">
-        stuff i, avery sommer, do on my own time 
+        stuff i, avery sommer, do on my own time
       </h2>
     </div>
   );

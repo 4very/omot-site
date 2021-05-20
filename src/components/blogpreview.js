@@ -7,11 +7,19 @@ import "react-alice-carousel/lib/alice-carousel.css";
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-  <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg" onDragStart={handleDragStart} />,
-  <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg" onDragStart={handleDragStart} />,
-  <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg" onDragStart={handleDragStart} />,
+  <img
+    src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg"
+    onDragStart={handleDragStart}
+  />,
+  <img
+    src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg"
+    onDragStart={handleDragStart}
+  />,
+  <img
+    src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg"
+    onDragStart={handleDragStart}
+  />,
 ];
-
 
 const Blogpreview = () => {
   const data = useStaticQuery(graphql`
@@ -38,7 +46,11 @@ const Blogpreview = () => {
         {data.allContentfulPhotopost.edges.map((edge) => {
           return (
             <div className="rounded-lg overflow-hidden shadow-lg bg-gray-200">
-              <AliceCarousel mouseTracking items={items} disableDotsControls={true} />
+              <AliceCarousel
+                mouseTracking
+                items={items}
+                disableDotsControls={true}
+              />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{edge.node.title}</div>
                 <p className="text-gray-700 text-base">
