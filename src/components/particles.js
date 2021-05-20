@@ -117,7 +117,7 @@ const ParticlesComp = () => {
       }}
       width="100%"
       height="100%"
-      className="h-full w-full absolute -z-1 bg-background"
+      className="h-full w-full absolute -z-1 bg-background top-0 left-0 block"
     />
   );
 };
