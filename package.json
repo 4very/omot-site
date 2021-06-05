@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
     "react": "^17.0.0",
