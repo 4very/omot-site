@@ -1,10 +1,11 @@
 import React from 'react';
+import TopNavbar from './components/TopNavbar';
 import './index.css';
 
 function App() {
   return (
     <div>
-      <p className="text-3xl">poggers</p>
+      <TopNavbar />
     </div>
   );
 }
