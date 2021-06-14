@@ -25,7 +25,9 @@
       "**/public": true,
       "**/.husky": true,
       "**/.commitlintrc.json": true,
-      "**/yarn.lock": true
+      "**/yarn.lock": true,
+      "**/*.code-workspace": true,
+      "**/.editorconfig": true
     },
     "explorerExclude.backup": null
   }
