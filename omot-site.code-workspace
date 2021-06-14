@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true,
+      "**/node_modules": true,
+      "**/package-lock.json": true,
+      "**/renovate.json": true,
+      "**/tsconfig.json": true,
+      "**/.prettierrc": true,
+      "**/.npmrc": true,
+      "**/.eslintrc": true,
+      "**/public": true,
+      "**/.husky": true,
+      "**/.commitlintrc.json": true,
+      "**/yarn.lock": true
+    },
+    "explorerExclude.backup": null
+  }
+}
