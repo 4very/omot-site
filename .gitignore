@@ -36,3 +36,6 @@ yarn-error.log*
 
 *.code-workspace
 omot-site.code-workspace
+
+yarn.lock
+package-lock.json
